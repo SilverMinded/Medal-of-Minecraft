@@ -1,0 +1,54 @@
+[
+{
+  "modid": "MoM|Base",
+  "name": "Medal of Minecraft",
+  "description": "Weapons and ammo, in Minecraft!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["J0QUE", "Testyflesty"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": [],
+  "dependants": [
+  "MoM|Items",
+  "MoM|Blocks"
+  ]
+},
+{
+  "modid": "MoM|Blocks",
+  "name": "Medal of Minecraft: Blocks",
+  "description": "Weapons and ammo, in Minecraft! Blocks Module.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["J0QUE", "Testyflesty"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": [
+  "MoM"
+  ],
+  "dependants": []
+},
+{
+  "modid": "MoM|Items",
+  "name": "Medal of Minecraft: Items",
+  "description": "Weapons and ammo, in Minecraft! Items Module.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["J0QUE", "Testyflesty"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": [
+  "MoM"
+  ],
+  "dependants": []
+}
+]
