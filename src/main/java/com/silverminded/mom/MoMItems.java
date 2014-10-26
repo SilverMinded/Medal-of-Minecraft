@@ -1,6 +1,5 @@
 package com.silverminded.mom;
 
-import com.silverminded.mom.blocks.Blocks;
 import com.silverminded.mom.items.Items;
 import com.silverminded.mom.lib.Modname;
 import com.silverminded.mom.lib.Strings;

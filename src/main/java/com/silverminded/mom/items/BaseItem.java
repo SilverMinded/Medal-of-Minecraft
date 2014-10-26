@@ -9,12 +9,23 @@ import net.minecraft.item.Item;
  */
 public class BaseItem extends Item {
 
+    @Deprecated
     public BaseItem(){}
 
     public BaseItem(String name) {
 
         this.setUnlocalizedName(name);
         this.setCreativeTab(CreativeTabs.tabMisc);
+        this.setMaxStackSize(64);
+        GameRegistry.registerItem(this, name);
+
+    }
+
+    public BaseItem(String name, Integer maxStackSize) {
+
+        this.setUnlocalizedName(name);
+        this.setCreativeTab(CreativeTabs.tabMisc);
+        this.setMaxStackSize(maxStackSize);
         GameRegistry.registerItem(this, name);
 
     }
@@ -23,6 +34,16 @@ public class BaseItem extends Item {
 
         this.setUnlocalizedName(name);
         this.setCreativeTab(tab);
+        this.setMaxStackSize(64);
+        GameRegistry.registerItem(this, name);
+
+    }
+
+    public BaseItem(String name, CreativeTabs tab, Integer maxStackSize) {
+
+        this.setUnlocalizedName(name);
+        this.setCreativeTab(tab);
+        this.setMaxStackSize(maxStackSize);
         GameRegistry.registerItem(this, name);
 
     }
@@ -32,6 +53,17 @@ public class BaseItem extends Item {
         this.setUnlocalizedName(name);
         this.setCreativeTab(tab);
         if (dimensional) this.isFull3D();
+        this.setMaxStackSize(64);
+        GameRegistry.registerItem(this, name);
+
+    }
+
+    public BaseItem(String name, CreativeTabs tab, boolean dimensional, Integer maxStackSize) {
+
+        this.setUnlocalizedName(name);
+        this.setCreativeTab(tab);
+        if (dimensional) this.isFull3D();
+        this.setMaxStackSize(maxStackSize);
         GameRegistry.registerItem(this, name);
 
     }
